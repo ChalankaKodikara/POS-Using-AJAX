@@ -7,6 +7,7 @@ const {
   getItemSets,
   getImage,
   getItemSetsBySpace,
+  getItemSetsByExactSpace,
 } = require("../../controllers/POS-Using-AJAX/set/get-item-set");
 
 const router = express.Router();
@@ -16,5 +17,6 @@ router.post("/add-item-set", upload.single("image"), addItemSet);
 router.get("/get-item-sets", getItemSets);
 router.get("/get-image/:filename", getImage);
 router.get("/get-item-sets-by-space", getItemSetsBySpace);
+router.get("/get-item-sets-by-space", getItemSetsByExactSpace);
 
 module.exports = router;
