@@ -17,6 +17,6 @@ router.post("/add-item-set", upload.single("image"), addItemSet);
 router.get("/get-item-sets", getItemSets);
 router.get("/get-image/:filename", getImage);
 router.get("/get-item-sets-by-space", getItemSetsBySpace);
-router.get("/get-item-sets-by-space", getItemSetsByExactSpace);
+router.get("/getItemSetsByExactSpace", getItemSetsByExactSpace);
 
 module.exports = router;
